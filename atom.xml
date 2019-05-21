@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="smallcatzmj.github.io/"/>
+  <link href="smallcatzmj.github.io/blog/"/>
   <updated>2019-05-21T02:38:57.411Z</updated>
-  <id>smallcatzmj.github.io/</id>
+  <id>smallcatzmj.github.io/blog/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="smallcatzmj.github.io/2019/05/17/hello-world/"/>
-    <id>smallcatzmj.github.io/2019/05/17/hello-world/</id>
+    <link href="smallcatzmj.github.io/blog/2019/05/17/hello-world/"/>
+    <id>smallcatzmj.github.io/blog/2019/05/17/hello-world/</id>
     <published>2019-05-17T14:54:50.291Z</published>
     <updated>2019-05-21T02:38:57.411Z</updated>
     
