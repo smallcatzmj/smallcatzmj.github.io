@@ -6,7 +6,7 @@
     
     
     
-    <title>smallcatzmj</title>
+    <title>No title | smallcatzmj</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -39,13 +39,17 @@
 
 
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="smallcatzmj">
-<meta property="og:url" content="smallcatzmj.github.io/blog/index.html">
+    <meta name="description" content="我爱学算法1.时间复杂度数据规模：1second之内解决问题： O(n^2)的算法可以处理大约10^4级别的数据 O(n)的算法可以处理大约10^8级别的数据 O(nlogn)的算法可以处理大约10^7级别的数据 因为从1一直加到10^8计算机的运行时间大约为0.4s,在1s以内。 O所表示的是代码执行的平均代码量的上界，前面通常会有一个常数，例如cO(2^n)，有的时候也指平均值。 O(logn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="smallcatzmj.github.io/blog/2019/12/19/算法系列1/index.html">
 <meta property="og:site_name" content="smallcatzmj">
+<meta property="og:description" content="我爱学算法1.时间复杂度数据规模：1second之内解决问题： O(n^2)的算法可以处理大约10^4级别的数据 O(n)的算法可以处理大约10^8级别的数据 O(nlogn)的算法可以处理大约10^7级别的数据 因为从1一直加到10^8计算机的运行时间大约为0.4s,在1s以内。 O所表示的是代码执行的平均代码量的上界，前面通常会有一个常数，例如cO(2^n)，有的时候也指平均值。 O(logn">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-19T08:51:43.695Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="smallcatzmj">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="我爱学算法1.时间复杂度数据规模：1second之内解决问题： O(n^2)的算法可以处理大约10^4级别的数据 O(n)的算法可以处理大约10^8级别的数据 O(nlogn)的算法可以处理大约10^7级别的数据 因为从1一直加到10^8计算机的运行时间大约为0.4s,在1s以内。 O所表示的是代码执行的平均代码量的上界，前面通常会有一个常数，例如cO(2^n)，有的时候也指平均值。 O(logn">
     
         <link rel="alternate" type="application/atom+xml" title="smallcatzmj" href="/blog/atom.xml">
     
@@ -60,7 +64,7 @@
 
 <body>
     <div id="loading" class="active"></div>
-    <aside id="menu">
+    <aside id="menu" class="hide">
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -81,7 +85,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/blog/">
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -147,7 +151,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">smallcatzmj</div>
+        <div class="flex-col header-title ellipsis"></div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -164,19 +168,16 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header post-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    smallcatzmj
                 
             </h1>
             <h5 class="subtitle">
                 
-                    在Web服务端的道路上努力前行
                 
             </h5>
         </div>
@@ -184,33 +185,46 @@
 
 </header>
 
+
 <div class="container body-wrap">
-    <ul class="post-list">
     
-        <li class="post-list-item fade">
-            <article id="post-算法系列1" class="article-card article-type-post" itemprop="blogPost">
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#我爱学算法"><span class="post-toc-number">1.</span> <span class="post-toc-text">我爱学算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-时间复杂度"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.时间复杂度</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-数组中的问题"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.数组中的问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#①二分查找"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">①二分查找</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#②移动0"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">②移动0</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#③移除元素"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">③移除元素</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-算法系列1" class="post-article article-type-post fade" itemprop="blogPost">
 
-    
+    <div class="post-card">
+        <h1 class="post-card-title"></h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2019-12-19 21:02:18" datetime="2019-12-19T13:02:18.412Z" itemprop="datePublished">2019-12-19</time>
+
+            <br id="mybreak">
+            
+<script>
+	mybreak.style="display:none";
+</script>
 
 
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/blog/2019/12/19/算法系列1/">No title</a>
-    </h3>
-  
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
+</span>
 
 
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2019-12-19 21:02:18" datetime="2019-12-19T13:02:18.412Z" itemprop="datePublished">2019-12-19</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h1 id="我爱学算法"><a href="#我爱学算法" class="headerlink" title="我爱学算法"></a>我爱学算法</h1><h2 id="1-时间复杂度"><a href="#1-时间复杂度" class="headerlink" title="1.时间复杂度"></a>1.时间复杂度</h2><p>数据规模：1second之内解决问题：</p>
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="我爱学算法"><a href="#我爱学算法" class="headerlink" title="我爱学算法"></a>我爱学算法</h1><h2 id="1-时间复杂度"><a href="#1-时间复杂度" class="headerlink" title="1.时间复杂度"></a>1.时间复杂度</h2><p>数据规模：1second之内解决问题：</p>
 <p>O(n^2)的算法可以处理大约10^4级别的数据</p>
 <p>O(n)的算法可以处理大约10^8级别的数据</p>
 <p>O(nlogn)的算法可以处理大约10^7级别的数据</p>
@@ -253,21 +267,103 @@
             document.body.appendChild(img);
           });
       </script>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-12-19T08:51:43.695Z" itemprop="dateUpdated">2019-12-19 16:51:43</time>
+</span>
+
+
+        
+        原文链接：<a href="/blog/2019/12/19/算法系列1/" target="_blank" rel="external">smallcatzmj.github.io/blog/2019/12/19/算法系列1/</a>
+        
+    </div>
+    <footer>
+        <div onclick="location.href='smallcatzmj.github.io/blog'">
+            <img src="/blog/img/avatar.jpg" alt="ScZmj">
+            <a>ScZmj</a>
+        </div>
+    </footer>
+</blockquote>
+
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
     
-        <div class="post-more-div">
-            <a href="/blog/2019/12/19/算法系列1/" class="post-more waves-button">
-                Continue reading...
-            </a>
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/&title=smallcatzmj&pic=smallcatzmj.github.io/blog/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/&title=smallcatzmj&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=smallcatzmj.github.io/blog/2019/12/19/算法系列1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=smallcatzmj&url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/&via=smallcatzmj.github.io/blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
         </div>
     </div>
+
     
+
+
+    
+    
+
+    
+
+    
+
+
 </article>
-
-        </li>
-    
-    </ul>
-
-    
 
 </div>
 
@@ -313,8 +409,82 @@
 
     </main>
     
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="/blog/img/dog.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/blog/img/wechat.png" data-alipay="/blog/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
+
+    
     <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/&title=《No title》 — smallcatzmj&pic=smallcatzmj.github.io/blog/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/&title=《No title》 — smallcatzmj&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=smallcatzmj.github.io/blog/2019/12/19/算法系列1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — smallcatzmj&url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/&via=smallcatzmj.github.io/blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=smallcatzmj.github.io/blog/2019/12/19/算法系列1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3aQW7DMAwF0dz/0u66CKzMJ5UWpkarILFlPS8YSuTrhcf1Nt6/v7v+bra7z3d3bRgyZMh4LONajs4D1jPc/br+/nYlMmTIOIDBwyJ58HpmMidfmwwZMmSkwXGds63DKH8RMmTIkEEYafBdX/lvAVeGDBmPYtSCINpegoO5NDTLkCHjNEbt4OxvPn+lviFDhoxHMa5w8NBJEsHOSn7NKUOGjNEMHuBI0pZuiTsBV4YMGacx+CPTg7Z0w9k5gJMhQ8ZURtr4RY7S+q1gcQlBhgwZoxnrMEeSQh6myeF+ULB8/16GDBkHMDptELWDOX49WqcMGTKGMtK2hjQg8o1oq8wpQ4aM0QwyUdralV7ZSUnR0ZsMGTIGMTo385JkOlursiFDhoyhDB6Ca0GZLzGdQYYMGbMZaatEpzCZtnYF716GDBlDGUErQ7jV5Mf6/FkfekZkyJAxmsG3tbtKBem96B9DhgwZQxnpzWnat6ucwFNJGTJkTGXUjuY7YTdNCuM2CxkyZIxm1EJerSRJAj1/lTJkyDiHwcMuKQbsSiLRlTJkyDiM0TqmBw/utHwFAVeGDBkjGFc4OHJXOoiO5GTIkDGawUeneNlPFmvzyJAhYxKjFmTTckLtUI+DZciQcQIjDXy15olOqveBJ0OGDBkgvNbC6Ne7cWXIkHEwgyy01kbGg3srNZQhQ8YDGWQRpCTJr+RJJOLJkCFjNCNtceChdtc2uPM3IEOGjIczfgBsMdsZ64YpfQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
 
 
     <!-- waves按钮特效 -->
@@ -322,7 +492,7 @@
 
 <!-- 主题配置脚本 -->
 <script>
-var BLOG = { ROOT: '/blog/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/blog/', SHARE: true, REWARD: true };
 </script>
 
 <!-- jquery -->
