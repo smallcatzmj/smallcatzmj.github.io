@@ -3,11 +3,11 @@
   <title>smallcatzmj</title>
   
   
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="smallcatzmj.github.io/blog/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2020-09-07T08:32:06.760Z</updated>
-  <id>smallcatzmj.github.io/blog/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>ScZmj</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Maven多模块</title>
-    <link href="smallcatzmj.github.io/blog/2020/09/07/maven%E5%A4%9A%E6%A8%A1%E5%9D%97/"/>
-    <id>smallcatzmj.github.io/blog/2020/09/07/maven多模块/</id>
+    <link href="http://yoursite.com/2020/09/07/maven%E5%A4%9A%E6%A8%A1%E5%9D%97/"/>
+    <id>http://yoursite.com/2020/09/07/maven多模块/</id>
     <published>2020-09-07T08:20:03.557Z</published>
     <updated>2020-09-07T08:32:06.760Z</updated>
     
@@ -31,15 +31,15 @@
     
     </summary>
     
-      <category term="Springboot" scheme="smallcatzmj.github.io/blog/categories/Springboot/"/>
+      <category term="Springboot" scheme="http://yoursite.com/categories/Springboot/"/>
     
     
   </entry>
   
   <entry>
     <title>排序算法总结</title>
-    <link href="smallcatzmj.github.io/blog/2019/12/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    <id>smallcatzmj.github.io/blog/2019/12/25/数据结构/</id>
+    <link href="http://yoursite.com/2019/12/25/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>http://yoursite.com/2019/12/25/数据结构/</id>
     <published>2019-12-24T16:00:00.000Z</published>
     <updated>2019-12-27T13:36:09.649Z</updated>
     
@@ -51,19 +51,19 @@
     
     </summary>
     
-      <category term="数据结构" scheme="smallcatzmj.github.io/blog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="算法" scheme="smallcatzmj.github.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="排序" scheme="smallcatzmj.github.io/blog/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="http://yoursite.com/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>我爱学算法</title>
-    <link href="smallcatzmj.github.io/blog/2019/12/25/%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%971/"/>
-    <id>smallcatzmj.github.io/blog/2019/12/25/算法系列1/</id>
+    <link href="http://yoursite.com/2019/12/25/%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%971/"/>
+    <id>http://yoursite.com/2019/12/25/算法系列1/</id>
     <published>2019-12-24T16:00:00.000Z</published>
     <updated>2019-12-27T13:37:06.236Z</updated>
     
@@ -75,12 +75,12 @@
     
     </summary>
     
-      <category term="算法" scheme="smallcatzmj.github.io/blog/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="smallcatzmj.github.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="数组" scheme="smallcatzmj.github.io/blog/tags/%E6%95%B0%E7%BB%84/"/>
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
