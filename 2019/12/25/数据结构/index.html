@@ -1,238 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <meta http-equiv="Content-Language" content="zh-cn">
-    <meta charset="utf-8">
-    
-    
-    
-    <title>排序算法总结 | smallcatzmj</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    
-    <meta name="theme-color" content="#77AAFF">
-    
-    
-    <meta name="keywords" content="算法,排序">
-    
-    
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  排序算法总结 |   Lemon </title>
 
-    
-
-    <!-- Baidu Push -->
-<script>
-	(function(){
-		var bp = document.createElement('script');
-		var curProtocol = window.location.protocol.split(':')[0];
-		if (curProtocol === 'https') {
-			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-		}
-		else {
-			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-		}
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(bp, s);
-	})();
-
-	var _hmt = _hmt || [];
-</script>
-
-
-
-    
-    <meta name="description" content="我想吃掉你的胰脏">
-<meta name="keywords" content="算法,排序">
-<meta property="og:type" content="article">
-<meta property="og:title" content="排序算法总结">
-<meta property="og:url" content="smallcatzmj.github.io/blog/2019/12/25/数据结构/index.html">
-<meta property="og:site_name" content="smallcatzmj">
-<meta property="og:description" content="我想吃掉你的胰脏">
-<meta property="og:locale" content="default">
-<meta property="og:image" content="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3486904540,3232382385&fm=26&gp=0.jpg">
-<meta property="og:updated_time" content="2019-12-27T13:36:09.649Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="排序算法总结">
-<meta name="twitter:description" content="我想吃掉你的胰脏">
-<meta name="twitter:image" content="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3486904540,3232382385&fm=26&gp=0.jpg">
-    
-        <link rel="alternate" type="application/atom+xml" title="smallcatzmj" href="/blog/atom.xml">
-    
-    <link rel="shortcut icon" href="/blog/img/favicon.ico">
-    <link id="style" rel="stylesheet" href="/blog/css/style.css?v=3.0">
-    <script>window.lazyScripts=[]</script>
-
-    <!-- custom head -->
-    
-            
-</head>
-
-<body>
-    <div id="loading" class="active"></div>
-    <aside id="menu" class="hide">
-  <div class="inner flex-row-vertical">
-    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
-    <div class="brand-wrap">
-      <div class="brand">
-        <a href="/blog/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/blog/img/avatar.jpg" alt="avatar">
-        </a>
-        <hgroup class="introduce">
-          <h5 class="nickname" id="name">ScZmj</h5>
-          
-            <div id="yiyanmotto" class="motto">&nbsp;</div>
-          
-        </hgroup>
-      </div>
-    </div>
-    <div class="scroll-wrap flex-col">
-      <ul class="nav">
-        
-              <li class="waves-block waves-effect">
-                  <a href="/blog/">
-                    <i class="icon icon-lg icon-home"></i>
-                    <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
-                  </a>
-              </li>
-            
-              <li class="waves-block waves-effect">
-                  <a href="/blog/archives">
-                    <i class="icon icon-lg icon-archives"></i>
-                    <span>归 档</span><i class="icon icon-lg icon-caret-left"></i>
-                  </a>
-              </li>
-            
-              <li class="waves-block waves-effect">
-                  <a href="/blog/categories">
-                    <i class="icon icon-lg icon-th-list"></i>
-                    <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
-                  </a>
-              </li>
-            
-              <li class="waves-block waves-effect">
-                  <a href="/blog/tags">
-                    <i class="icon icon-lg icon-tags"></i>
-                    <span>标 签</span><i class="icon icon-lg icon-caret-left"></i>
-                  </a>
-              </li>
-            
-              <li class="waves-block waves-effect">
-                  <a href="/blog/about">
-                    <i class="icon icon-lg icon-smile-o"></i>
-                    <span>关 于</span><i class="icon icon-lg icon-caret-left"></i>
-                  </a>
-              </li>
-            
-      <div class="nav2">
-          
-              <a class="nav2item" data-title="Email" href="mailto:942796778@qq.com" target="_parent" title="Email">
-                <i class="icon icon-lg icon-envelope-o envelope-o"></i>
-              </a>
-          
-              <a class="nav2item" data-title="Github" href="https://github.com/smallcatzmj" target="_blank" title="Github">
-                <i class="icon icon-lg icon-github github"></i>
-              </a>
-          
-              <a class="nav2item" data-title="QQ空间" href="https://user.qzone.qq.com/942796778/infocenter" target="_blank" title="QQ空间">
-                <i class="icon icon-lg icon-weibo weibo"></i>
-              </a>
-          
-
-            </div>
-        
-      </ul>
-        
-    </div>
-  </div>
  
-</aside>
+  
+    <link rel="icon" href="/blog/images/favicon.png">
+  
 
 
-    <main id="main">
-        <header class="top-header" id="header">
-    <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
-        </a>
-        <div class="flex-col header-title ellipsis">排序算法总结</div>
-        
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
-        </div>
-        
-        <a href="../../atom.xml" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss">
-            <i class="icon icon-lg icon-rss"></i>
-        </a>
-    </div>
-</header>
-<header class="content-header post-header">
+  <link rel="stylesheet" href="/blog/nayo.min.css"> 
+</head>  
+  <body>   
     
-    
-    <div class="container fade-scale">
-        <div id="myheader">
-            <h1 class="title">
-                
-            </h1>
-            <h5 class="subtitle">
-                
-                
-            </h5>
-        </div>
+      <header class="header-wrapper">
+
+  <nav class="inner">
+    <div class="title">
+      <a href="/">
+        <img class="logo" src="/blog/images/logo.png">
+      </a>
     </div>
 
+    <ul class="menu">
+      
+      
+      <li class="item">
+        <a class="link" id="menu-home" href="/blog/">
+          <i class="iconfont icon-home">
+        </i></a>
+      </li>
+      
+      
+      
+      <li class="item">
+        <a class="link" id="menu-archives" href="/blog/archives">
+          <i class="iconfont icon-archives">
+        </i></a>
+      </li>
+      
+      
+      
+      <li class="item">
+        <a class="link" id="menu-tags" href="/blog/tags">
+          <i class="iconfont icon-tags">
+        </i></a>
+      </li>
+      
+      
+      
+      <li class="item">
+        <a class="link" id="menu-about" href="/blog/about">
+          <i class="iconfont icon-about">
+        </i></a>
+      </li>
+      
+      
+      
+      <li class="item">
+        <a class="link" id="menu-search">
+          <i class="iconfont icon-search">
+        </i></a>
+        
+
+        
+      
+    </li></ul>
+  </nav>
 </header>
 
+<header class="mobile-header-wrapper">
+  <i id="mobile-toggle" class="iconfont icon-menu mobile-toggle"></i>
+</header>   
 
-<div class="container body-wrap">
-    
-    <aside class="post-widget">
-        <nav class="post-toc-wrap" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#①冒泡排序"><span class="post-toc-number">1.</span> <span class="post-toc-text">①冒泡排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#②选择排序"><span class="post-toc-number">2.</span> <span class="post-toc-text">②选择排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#③插入排序"><span class="post-toc-number">3.</span> <span class="post-toc-text">③插入排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#④归并排序"><span class="post-toc-number">4.</span> <span class="post-toc-text">④归并排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#⑤快速排序"><span class="post-toc-number">5.</span> <span class="post-toc-text">⑤快速排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#⑥堆排序"><span class="post-toc-number">6.</span> <span class="post-toc-text">⑥堆排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#⑦桶排序"><span class="post-toc-number">7.</span> <span class="post-toc-text">⑦桶排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#排序对数器"><span class="post-toc-number">8.</span> <span class="post-toc-text">排序对数器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#类类型比较器"><span class="post-toc-number">9.</span> <span class="post-toc-text">类类型比较器</span></a></li></ol>
-        </nav>
-    </aside>
-   
-<article id="post-数据结构" class="post-article article-type-post fade" itemprop="blogPost">
+      <div class="container">       
+          
+          
+            <div class="container-inner">  
+          
 
-    <div class="post-card">
-        <h1 class="post-card-title">排序算法总结</h1>
-        <div class="post-meta">
-            <i class="icon icon-lg icon-calendar-o"></i>
-            发表于
-            <time class="post-time" title="2019-12-25 00:00:00" datetime="2019-12-24T16:00:00.000Z" itemprop="datePublished">2019-12-25</time>
+          <article class="post slideDownMin">
+  
+	
+<div class="header">
+		<p class="title">	
+			排序算法总结
+		</p>
+		<div class="info">	
+			<time>
+				Dec 25, 2019
+			</time>
 
-            <br id="mybreak">
-            
-	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/blog/categories/数据结构/">数据结构</a></li></ul>
+			
+			
+				<i class="iconfont icon-words"></i>
+				<span class="words">8139
+				</span>
+			
+		</div>
+</div> 
+	
 
+    <script type="text/x-mathjax-config">
+        var post = document.getElementsByClassName("post")[0];  
+        MathJax.Hub.Config({
+            showProcessingMessages: false,
+            messageStyle: "none",    
+            tex2jax: {
+                inlineMath:  [ ["$", "$"] , ["\\(","\\)"]],
+                displayMath: [ ["$$","$$"] , ["\\[","\\]"]],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+            },
+            "HTML-CSS": {            
+                showMathMenu: false
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub,post]);
+    </script>
+    <style>.MathJax{outline:0;}</style>
 
-            <i>·</i>
-            
-<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
-    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
-</span>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.2/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+ 
 
+	  <div class="typo post-content ">
 
-        </div>
-        <div class="post-count-custom">
-            <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
-        </div>
-        <div class="post-content" id="post-content" itemprop="postContent">
-            <figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3486904540,3232382385&fm=26&gp=0.jpg" alt="我想吃掉你的胰脏" title>
-                </div>
-                <div class="image-caption">我想吃掉你的胰脏</div>
-            </figure>
+		
+
+			
+					<p><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3486904540,3232382385&fm=26&gp=0.jpg" alt="我想吃掉你的胰脏"></p>
 <a id="more"></a>
 <h2 id="①冒泡排序"><a href="#①冒泡排序" class="headerlink" title="①冒泡排序"></a>①冒泡排序</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubbleSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>{    </span><br><span class="line">    <span class="comment">//数组为空或只有一个元素，结束    </span></span><br><span class="line">    <span class="keyword">if</span> (arr == <span class="keyword">null</span> || arr.length <= <span class="number">1</=></span>){        <br><span class="line">        <span class="keyword">return</span>;    </span><br><span class="line">    }    <span class="comment">//end为未排完序的最后一个数下标    </span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> end = arr.length - <span class="number">1</span>;end > <span class="number">0</span>;end--){        </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i < end; i++) {            </span><br><span class="line">            <span class="keyword">if</span> (arr[i] > arr[i + <span class="number">1</span>])                </span><br><span class="line">                swap(arr,i,i+<span class="number">1</span>);        </span><br><span class="line">        }    </span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>​            时间复杂度O(n²),空间复杂度O(1)</p>
@@ -277,381 +176,187 @@
             });
             document.body.appendChild(img);
           });
-      </script>
-        </div>
+      </script>  	
+					
+	  </div>     
+	  
 
-        <blockquote class="post-copyright">
-    <div class="content">
-        
-<span class="post-time">
-    Last updated: <time datetime="2019-12-27T13:36:09.649Z" itemprop="dateUpdated">2019-12-27 21:36:09</time>
-</span>
+	<div class="bottom">
+  <div class="other">
+    <div class="meta">
+      
+      <i class="iconfont icon-category"></i>
+      <a class="category-link" href="/blog/categories/数据结构/">数据结构</a>
 
+      
 
-        
-        原文链接：<a href="/blog/2019/12/25/数据结构/" target="_blank" rel="external">smallcatzmj.github.io/blog/2019/12/25/数据结构/</a>
-        
-    </div>
-    <footer>
-        <div onclick="location.href='smallcatzmj.github.io/blog'">
-            <img src="/blog/img/avatar.jpg" alt="ScZmj">
-            <a>ScZmj</a>
-        </div>
-    </footer>
-</blockquote>
-
-        
-    <div class="page-reward">
-        <nav class="myreward">
-            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
-        </nav>
+      
+      <i class="iconfont icon-tag"></i>
+      <a class="tag-link" href="/blog/tags/排序/">排序</a> <a class="tag-link" href="/blog/tags/算法/">算法</a>
+      
     </div>
 
+    <div class="operate">
+      
+      <span class="text">Share</span>
+      <ul class="share">
+	   			             
+        <li class="iconfont 
+		icon-share-qq 
+		-mob-share-qq 
+		item"></li>		
+   	   			             
+        <li class="iconfont 
+		icon-share-weixin 
+		-mob-share-weixin 
+		item"></li>		
+   	   			             
+        <li class="iconfont 
+		icon-share-weibo 
+		-mob-share-weibo 
+		item"></li>		
+   	   
+</ul>	
 
-
-        <div class="post-footer">
-            
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/排序/">排序</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/算法/">算法</a></li></ul>
-
-
-            
-<div class="page-share-wrap">
-    
-
-<div class="page-share" id="pageShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=smallcatzmj.github.io/blog/2019/12/25/数据结构/&title=《排序算法总结》 — smallcatzmj&pic=smallcatzmj.github.io/blog/img/avatar.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=smallcatzmj.github.io/blog/2019/12/25/数据结构/&title=《排序算法总结》 — smallcatzmj&source=
-                
-                    
-                    
-                
-..." data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=smallcatzmj.github.io/blog/2019/12/25/数据结构/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《排序算法总结》 — smallcatzmj&url=smallcatzmj.github.io/blog/2019/12/25/数据结构/&via=smallcatzmj.github.io/blog" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=smallcatzmj.github.io/blog/2019/12/25/数据结构/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-
-    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
-        <i class="icon icon-share-alt icon-lg"></i>
-    </a>
-</div>
-
-
-
-        </div>
+<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+      
     </div>
+  </div>
 
-    
-<nav class="post-nav flex-row flex-justify-between">
+
   
-    <div class="waves-block waves-effect prev">
-      <a href="/blog/2020/09/07/maven多模块/" id="post-prev" class="post-nav-link">
-        <h4 class="title">
-          上一篇：Maven多模块
-        </h4>
+  <nav class="nav">
+    <div class="link">
+      
+      <a href="/blog/2019/12/25/算法系列1/" class="link-wrap">
+        <strong class="caption">older</strong>
+        
+        <span class="title">
+          我爱学算法
+        </span>
       </a>
+      
     </div>
-  
-
-  
-    <div class="waves-block waves-effect next">
-      <a href="/blog/2019/12/25/算法系列1/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：我爱学算法">下一篇：我爱学算法</h4>
+    <div class="link">
+      
+      <a href="/blog/2020/09/07/maven多模块/" class="link-wrap">
+        <strong class="caption">newer</strong>
+        
+        <span class="title">
+          Maven多模块
+        </span>
       </a>
+      
     </div>
+  </nav>
   
-</nav>
-
-
-
-    
-    
+</div> 
+	
+<div class="comment">
 
     
 
+    <div id="comment">
+    </div>
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+    <script src="//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js"></script>
+
+    <script>
+        new Valine({
+            el: '#comment',
+            notify: false,
+            verify: false,
+            app_id: 'cFM0eCo0CQ9xmBXmHi1eltol-gzGzoHsz',
+            app_key: 'oh9tizsnvV2vNvWgqEvoNtQO',
+            path: window.location.pathname,
+            avatar: 'mm',
+            guest_info: ['nick', 'mail']
+        });
+    </script>
     
-
-
+</div>	
 </article>
 
+          </div> 
+      </div>            
+    
+        <i id="toTop" class="iconfont icon-backtotop"></i>
+
+  
+    <div class="none" id="search">
+    <div class="header">
+        <input type="text" placeholder="Typing Something here." id="search-input" class="input">
+        
+        <i id="search-cancel" class="iconfont icon-cancel"></i>
+    </div>
+
+    <div id="search-result" class="result"></div>
 </div>
+     <div class="mobile-menu">      
 
-        <footer class="footer">
-    <div class="footer-content">
-        <span class="power">
-            <i class="icon icon-lg icon-copyright"></i>
-            2019
-            <i class="icon icon-lg icon-heart"></i>
-            <a href="smallcatzmj.github.io/blog">smallcatzmj.github.io</a>
-            <br>
-            Power by
-            <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
-            Theme
-            <a class="tomotoeslink" href="https://github.com/tomotoes/hexo-theme-tomotoes/" target="_blank" rel="external nofollow">tomotoes</a>
-        </span>
+      
+      <img class="mobile-menu-icon" src="/blog/images/favicon.png">  
+      
 
-        <br>
-
-        <span id="RunTime" style="color:#a7a7a2;"></span>
-        <br>
-
-        <span>
+         
             
-	<i class="icon icon-lg icon-user">
-<span id="busuanzi_container_site_uv" style="display:none">
-       访问用户：<span id="busuanzi_value_site_uv"></span>
-    </span>人</i>
-    ·
-    <i class="icon icon-lg icon-eye">
-    <span id="busuanzi_container_site_pv" style="display:none">
-      访问次数：<span id="busuanzi_value_site_pv"></span>
-    </span>次
-    </i>
 
+            <a class="mobile-menu-link" href="/blog/">Home
+            </a>
+            
+         
+            
 
-        </span>
-        <br>
+            <a class="mobile-menu-link" href="/blog/archives">Archives
+            </a>
+            
+         
+            
 
-        <span class="license">This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
-    </div>
-</footer>
+            <a class="mobile-menu-link" href="/blog/tags">Tags
+            </a>
+            
+         
+            
 
-    </main>
+            <a class="mobile-menu-link" href="/blog/about">About
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
+            
+         
+      
+</div>
+        
     
-        
-<div id="reward" class="page-modal reward-lay">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <h3 class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        <span>感谢您的鼓励支持！</span>
-        <i class="icon icon-quote-right"></i>
-    </h3>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" data-img="/blog/img/dog.png" alt="打赏二维码">
-        </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/blog/img/wechat.png" data-alipay="/blog/img/alipay.png">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
-                <span class="reward-toggle-item alipayPay">支付宝</span>
-            </div>
-        </label>
-        
-        <i class="icon icon-caret-up"></i>
-    </div>
-</div>
 
 
+
+     
     
-    <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 
+<footer class="footer">
+	<div class="inner">
+		<div class="copyright">
+			&copy;
+			
+			2019 -
+			
+			2021
+			Lemon
 
-<div class="global-share" id="globalShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=smallcatzmj.github.io/blog/2019/12/25/数据结构/&title=《排序算法总结》 — smallcatzmj&pic=smallcatzmj.github.io/blog/img/avatar.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=smallcatzmj.github.io/blog/2019/12/25/数据结构/&title=《排序算法总结》 — smallcatzmj&source=
-                
-                    
-                    
-                
-..." data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=smallcatzmj.github.io/blog/2019/12/25/数据结构/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《排序算法总结》 — smallcatzmj&url=smallcatzmj.github.io/blog/2019/12/25/数据结构/&via=smallcatzmj.github.io/blog" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=smallcatzmj.github.io/blog/2019/12/25/数据结构/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
+			<br>
+			By <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>
+		</div>
+	</div>
+</footer>   
 
-
-<div class="page-modal wx-share" id="wxShare">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACQklEQVR42u3awVLDMAxF0f7/T5stMyXJfbILWL5edUpJerJ4lS29XniNb+v9HfLX96tdvX7//LIlQ4aMbRnjdhFG+s49gDysH6gyZMg4gHGVYOQz98FKYpewH76zDBkyZOBbklKPhLsMGTJkrA3c+8/wMP3j3w0ZMmT8e0YtBAdY5Ar3j2bxXlyGDBkbMvip+++//kh/Q4YMGVsxRrhILM40JkdpyZAhozeDB1ztKI2zyab64S4yZMhoylgw4oAPzvh/xQdwMmTIaM3gwxNp4cjLx5lBjUuSDBkyGjHIRWuNybXP+OExyZAhozUjbQDMjHDVWph8mEyGDBknMNJjfT5gMd8kCNqcMmTIaMfgJR3f7vKhjZlNb1zhypAhY3MGj9raQAbfBpP4LmazDBkyNmfwLSIP4jRM07Zo0BiQIUPG5ow0WHmY8sIxjePi5JoMGTK2ZcwUhbWYXlVWPvxuyJAhoxGjtgesHeinhSYf+JAhQ0ZvRrHbuSiC02GvhwELGTJkNGXw2OVRmB63pRtdGTJknMlIh7fGokUeRDwcJkOGjNYM3ixMG5nzXzouCmXIkNGawQ/XSFOBl4PpfVFjQIYMGS0Yny7m+IFauoW+rG1lyJDRjlFrTM4UiymSj4PIkCGjN2MmZPmYF6pSw42rDBkyTmOk51c8dskDqkV2MKMhQ4aMwxh8bGtmC8rHOGTIkCEjDdza1XgLE/U3ZMiQ0ZRRK+BmNqsz5aMMGTJOY6SjFbVDOv5QyGFcOqIhQ4aMbRlf3yTwLi5KAZoAAAAASUVORK5CYII=" alt="微信分享二维码">
-</div>
-
-
-
-
-    <!-- waves按钮特效 -->
-<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
-
-<!-- 主题配置脚本 -->
-<script>
-var BLOG = { ROOT: '/blog/', SHARE: true, REWARD: true };
-</script>
-
-<!-- jquery -->
-<script src="/blog/js/jquery.min.js?v=3.0"></script>
-
-<!-- 搜索 -->
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item waves-block waves-effect" onclick="location.href='{path}'">
-    <div class="title ellipsis" title="{title}">{title}</div>
-</li>
-</template>
-
-
-<!-- main博客脚本 -->
-<script src="/blog/js/main.min.js?v=3.0"></script>
-
-<!-- 动画&配置 -->
-<script src="/blog/js/script.min.js?v=3.0"></script>
-
-<!-- 脚本管理 -->
-<script>
-
-if(window.innerWidth > 800){
-	/* 3D标题 */
-	$(".content-header").on("mousemove", threedee);
-
-	/* 底部追随鼠标 */
-	$(".footer").hover(2);
-
-	/* gotop键的涟漪 */
-	$("#gotop").hover(1);
-
-	/* 赞赏的粒子雨 */
-	$("#reward").hover(3);
-
-	/* 微信公众号的底部渲染 */
-	$("#wechat").hover(4);
-
-    /* 标题跳动 */
-    $(".archivestitle").bumpyText();
-
-	/* 图片点击放大 */
-	const postimg = jQuery(".post-content img:not(.github-emoji)");
-	postimg.on("click",function(){
-
-		mask.classList.add("in");
-		main.classList.add("Mask");
-		menu.classList.add("Mask");
-		var myimg = this.cloneNode(true);
-		myimg.classList.add("imgShow");
-
-		setTimeout(function(){
-			jQuery(myimg).animate({
-				opacity:"1"
-			},1000);
-		},0);
-
-		document.body.appendChild(myimg);
-
-		myimg.onclick=function(){
-			document.body.removeChild(myimg);
-			mask.classList.remove("in");
-			main.classList.remove("Mask");
-			menu.classList.remove("Mask");
-		};
-
-	});
-
-}
-
-/* 名字跳动 */
-$("#name").bumpyText();
-
-
-/* 网站运行时间 */
-setInterval(function () {
-	setTime("2019/5/21");
-}, 1000);
-
-/* 文章块的淡出 */
-postshow();
-
-/* 座右铭 */
-
-   getHitokoto();
-
-
-
-/* 粘贴提示 */
-G($(".post-content"), location.href, "ScZmj");
-
-
-/* 控制台 */
-if (window.console && window.console.log) {
-	setTimeout(function () {
-		console.log("\n %c 一个坏掉的番茄 %c  © Simon Ma  http://tomotoes.com \n\n", "color:#FFFFFB;background:#1abc9c;padding:5px 0;border-radius:.5rem 0 0 .5rem;", "color:#FFFFFB;background:#080808;padding:5px 0;border-radius:0 .5rem .5rem 0;");
-	}, 0);
-}
-
-</script>
-
-
-
-
-<!-- 公式渲染 -->
-
-
-
-<!-- 不蒜子 -->
-
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-</body>
+    <script src="/blog/nayo.bundle.js"></script>           
+  </body>        
 </html>
