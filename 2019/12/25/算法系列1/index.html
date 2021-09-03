@@ -1,139 +1,158 @@
 <!DOCTYPE html>
-<html>
-  <head><meta name="generator" content="Hexo 3.8.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  
-  
-  <title>  我爱学算法 |   Lemon </title>
+<html lang="" color-mode="light">
 
- 
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content>
+  <meta name="author" content="ScZmj">
+  <meta name="description" content>
   
+  
+  <title>
+    
+      我爱学算法 
+      
+      
+      |
+    
+     smallcatzmj
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
     <link rel="icon" href="/images/favicon.png">
   
 
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/nayo.min.css"> 
-</head>  
-  <body>   
-    
-      <header class="header-wrapper">
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/color-scheme.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/comments.css">
 
-  <nav class="inner">
-    <div class="title">
-      <a href="/">
-        <img class="logo" src="/images/logo.png">
-      </a>
-    </div>
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
-    <ul class="menu">
-      
-      
-      <li class="item">
-        <a class="link" id="menu-home" href="/">
-          <i class="iconfont icon-home">
-        </i></a>
-      </li>
-      
-      
-      
-      <li class="item">
-        <a class="link" id="menu-archives" href="/archives">
-          <i class="iconfont icon-archives">
-        </i></a>
-      </li>
-      
-      
-      
-      <li class="item">
-        <a class="link" id="menu-tags" href="/tags">
-          <i class="iconfont icon-tags">
-        </i></a>
-      </li>
-      
-      
-      
-      <li class="item">
-        <a class="link" id="menu-about" href="/about">
-          <i class="iconfont icon-about">
-        </i></a>
-      </li>
-      
-      
-      
-      <li class="item">
-        <a class="link" id="menu-search">
-          <i class="iconfont icon-search">
-        </i></a>
-        
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <script src="/js/fancybox.js"></script>
 
-        
-      
-    </li></ul>
-  </nav>
-</header>
-
-<header class="mobile-header-wrapper">
-  <i id="mobile-toggle" class="iconfont icon-menu mobile-toggle"></i>
-</header>   
-
-      <div class="container">       
-          
-          
-            <div class="container-inner">  
-          
-
-          <article class="post slideDownMin">
   
-	
-<div class="header">
-		<p class="title">	
-			我爱学算法
-		</p>
-		<div class="info">	
-			<time>
-				Dec 25, 2019
-			</time>
 
-			
-			
-				<i class="iconfont icon-words"></i>
-				<span class="words">3521
-				</span>
-			
-		</div>
-</div> 
-	
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
 
-    <script type="text/x-mathjax-config">
-        var post = document.getElementsByClassName("post")[0];  
-        MathJax.Hub.Config({
-            showProcessingMessages: false,
-            messageStyle: "none",    
-            tex2jax: {
-                inlineMath:  [ ["$", "$"] , ["\\(","\\)"]],
-                displayMath: [ ["$$","$$"] , ["\\[","\\]"]],
-                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
-            },
-            "HTML-CSS": {            
-                showMathMenu: false
-            }
-        });
-        MathJax.Hub.Queue(["Typeset",MathJax.Hub,post]);
-    </script>
-    <style>.MathJax{outline:0;}</style>
+</head>
 
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.2/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
- 
 
-	  <div class="typo post-content ">
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/avatar.png" alt>
+      
+    </a>
+    <div class="nickname"><a href="/">Oranges</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
 
-		
+<script src="/js/activeNav.js"></script>
 
-			
-					<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577463334795&di=90f2baa245f6fbc2882d3a87cdb403fc&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fent%2Ftransform%2F184%2Fw630h354%2F20190826%2F7b72-icuacrz5535183.jpg" alt="天气之子"></p>
-<a id="more"></a>
-<h2 id="1-时间复杂度"><a href="#1-时间复杂度" class="headerlink" title="1.时间复杂度"></a>1.时间复杂度</h2><p>数据规模：1second之内解决问题：</p>
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">我爱学算法</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2019-12-25 00:00:00
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/算法/" title="算法">
+                    <b>#</b> 算法
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/数组/" title="数组">
+                    <b>#</b> 数组
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h2 id="1-时间复杂度"><a href="#1-时间复杂度" class="headerlink" title="1.时间复杂度"></a>1.时间复杂度</h2><p>数据规模：1second之内解决问题：</p>
 <p>O(n^2)的算法可以处理大约10^4级别的数据</p>
 <p>O(n)的算法可以处理大约10^8级别的数据</p>
 <p>O(nlogn)的算法可以处理大约10^7级别的数据</p>
@@ -142,227 +161,402 @@
 <p>O(logn)表示n经过几次除以一个常数的操作后，等于0 或者1等常数，如log10n = O(logn),n一直除以10直到变为1.</p>
 <p>二分查找 log2n =  O(logn) 可由数学式推导：logaN = logab * logbN，logab为一个常数。</p>
 <p>特殊情况：时间复杂度O(sqrt(n))，素数的判断：</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span>{    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">2</span> ;x*x <= n; x ++){ < span><br><span class="line">        <span class="keyword">if</span> (n % x == <span class="number">0</span>)            </span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;        </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;    </span><br><span class="line">    }</span><br><span class="line">}</span><br></=></span></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">2</span> ;x*x &lt;= n; x ++)&#123;        </span><br><span class="line">        <span class="keyword">if</span> (n % x == <span class="number">0</span>)            </span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;        </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>递归的复杂度求法，master公式：</p>
 <p>T [n] = aT[n/b] + f (n)（直接记为T [n] = aT[n/b] + T (N^d)）</p>
-<p>其中 a >= 1 and b > 1 是常量，其表示的意义是n表示问题的规模，a表示递归的次数也就是生成的子问题数，b表示每次递归是原来的1/b之一个规模，f（n）表示分解和合并所要花费的时间之和。</p>
+<p>其中 a &gt;= 1 and b &gt; 1 是常量，其表示的意义是n表示问题的规模，a表示递归的次数也就是生成的子问题数，b表示每次递归是原来的1/b之一个规模，f（n）表示分解和合并所要花费的时间之和。</p>
 <p>解法：<br>①当d<logb a时，时间复杂度为o(n^(logb a)) ②当d="logb" a时，时间复杂度为o((n^d)*logn) ③当d>logb a时，时间复杂度为O(n^d)</logb></p>
 <hr>
-<h2 id="2-数组中的问题"><a href="#2-数组中的问题" class="headerlink" title="2.数组中的问题"></a>2.数组中的问题</h2><h3 id="①二分查找"><a href="#①二分查找" class="headerlink" title="①二分查找"></a>①二分查找</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> arr 有序数组</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> n 数组长度</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> target 目标值</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 目标值的数组下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">binarysearch</span><span class="params">(<span class="keyword">int</span> arr[], <span class="keyword">int</span> n,<span class="keyword">int</span> target)</span></span>{     </span><br><span class="line">    <span class="keyword">int</span> l = <span class="number">0</span>; <span class="keyword">int</span> r = n - <span class="number">1</span>; <span class="comment">//在[l...r]之间寻找目标值     </span></span><br><span class="line">    <span class="keyword">while</span> (l <= r) { <span class="comment">//l==r,目标依旧在此区间         </=></span><br><span class="line">        <span class="keyword">int</span> mid = (l+r)/<span class="number">2</span>;         </span><br><span class="line">        <span class="keyword">if</span> (arr[mid] == target)             </span><br><span class="line">            <span class="keyword">return</span> mid;         </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (arr[mid] < target)             </span><br><span class="line">            l = mid + <span class="number">1</span>;         </span><br><span class="line">        <span class="keyword">else</span>             </span><br><span class="line">            r = mid - <span class="number">1</span>;     </span><br><span class="line">    }     </span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>; </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="2-数组中的问题"><a href="#2-数组中的问题" class="headerlink" title="2.数组中的问题"></a>2.数组中的问题</h2><h3 id="①二分查找"><a href="#①二分查找" class="headerlink" title="①二分查找"></a>①二分查找</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> arr 有序数组</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> n 数组长度</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> target 目标值</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 目标值的数组下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">binarysearch</span><span class="params">(<span class="keyword">int</span> arr[], <span class="keyword">int</span> n,<span class="keyword">int</span> target)</span></span>&#123;     </span><br><span class="line">    <span class="keyword">int</span> l = <span class="number">0</span>; <span class="keyword">int</span> r = n - <span class="number">1</span>; <span class="comment">//在[l...r]之间寻找目标值     </span></span><br><span class="line">    <span class="keyword">while</span> (l &lt;= r) &#123;          <span class="comment">//l==r,目标依旧在此区间         </span></span><br><span class="line">        <span class="keyword">int</span> mid = (l+r)/<span class="number">2</span>;         </span><br><span class="line">        <span class="keyword">if</span> (arr[mid] == target)             </span><br><span class="line">            <span class="keyword">return</span> mid;         </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (arr[mid] &lt; target)             </span><br><span class="line">            l = mid + <span class="number">1</span>;         </span><br><span class="line">        <span class="keyword">else</span>             </span><br><span class="line">            r = mid - <span class="number">1</span>;     </span><br><span class="line">    &#125;     </span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>时间复杂度复杂度为O(logn)</p>
 <hr>
-<h3 id="②移动0"><a href="#②移动0" class="headerlink" title="②移动0"></a>②移动0</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveZeroes</span><span class="params">(<span class="keyword">int</span> nums[])</span></span>{    </span><br><span class="line">    List<integer> noZeroElements = <span class="keyword">new</span> ArrayList(); <span class="comment">//定义集合存放非0元素   </span></integer></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i < nums.length; i++) {        </span><br><span class="line">        <span class="keyword">if</span> (nums[i] != <span class="number">0</span>)            <span class="comment">//遍历数组若为非0数则将其加入集合</span></span><br><span class="line">            noZeroElements.add(nums[i]);    </span><br><span class="line">    }    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = noZeroElements.size(); j < nums.length; j++)            </span><br><span class="line">        noZeroElements.add(<span class="number">0</span>);       <span class="comment">//后续补0</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i < noZeroElements.size(); i++) {        </span><br><span class="line">        nums[i] = noZeroElements.get(i);    <span class="comment">//将集合中的值重新传回数组</span></span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="②移动0"><a href="#②移动0" class="headerlink" title="②移动0"></a>②移动0</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveZeroes</span><span class="params">(<span class="keyword">int</span> nums[])</span></span>&#123;    </span><br><span class="line">    List&lt;Integer&gt; noZeroElements = <span class="keyword">new</span> ArrayList(); <span class="comment">//定义集合存放非0元素   </span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;        </span><br><span class="line">        <span class="keyword">if</span> (nums[i] != <span class="number">0</span>)            <span class="comment">//遍历数组若为非0数则将其加入集合</span></span><br><span class="line">            noZeroElements.add(nums[i]);    </span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = noZeroElements.size(); j &lt; nums.length; j++)            </span><br><span class="line">        noZeroElements.add(<span class="number">0</span>);       <span class="comment">//后续补0</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; noZeroElements.size(); i++) &#123;        </span><br><span class="line">        nums[i] = noZeroElements.get(i);    <span class="comment">//将集合中的值重新传回数组</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <p>时间复杂度为O(n),空间复杂度为O(n)</p>
 <p>优化：</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveZeroes</span><span class="params">(<span class="keyword">int</span> nums[])</span></span>{    <span class="comment">//从[0...k)都为非0元素    </span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;<span class="comment">//定义一个从头开始的指针    </span></span><br><span class="line">    <span class="keyword">int</span> swap = <span class="number">0</span>;    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i < nums.length; i++) {        </span><br><span class="line">        <span class="keyword">if</span> (nums[i] != <span class="number">0</span>) {            </span><br><span class="line">            <span class="keyword">if</span> (k != i) {                </span><br><span class="line">                swap = nums[k];                </span><br><span class="line">                nums[k++] = nums[i];                </span><br><span class="line">                nums[i] = swap;            </span><br><span class="line">            }            </span><br><span class="line">            <span class="keyword">else</span> <span class="comment">//i == k,防止自己交换自己                </span></span><br><span class="line">                k++;        </span><br><span class="line">        }    </span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveZeroes</span><span class="params">(<span class="keyword">int</span> nums[])</span></span>&#123;    <span class="comment">//从[0...k)都为非0元素    </span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;<span class="comment">//定义一个从头开始的指针    </span></span><br><span class="line">    <span class="keyword">int</span> swap = <span class="number">0</span>;    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;        </span><br><span class="line">        <span class="keyword">if</span> (nums[i] != <span class="number">0</span>) &#123;            </span><br><span class="line">            <span class="keyword">if</span> (k != i) &#123;                </span><br><span class="line">                swap = nums[k];                </span><br><span class="line">                nums[k++] = nums[i];                </span><br><span class="line">                nums[i] = swap;            </span><br><span class="line">            &#125;            </span><br><span class="line">            <span class="keyword">else</span> <span class="comment">//i == k,防止自己交换自己                </span></span><br><span class="line">                k++;        </span><br><span class="line">        &#125;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="③移除元素"><a href="#③移除元素" class="headerlink" title="③移除元素"></a>③移除元素</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//[0...k)都是非目标值val</span></span><br><span class="line"><span class="keyword">int</span> k = <span class="number">0</span>;<span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i < nums.length; i++) {    </span><br><span class="line">    <span class="keyword">if</span> (nums[i] != val){ <span class="comment">//遍历数组若该数与目标数相等，则交换        </span></span><br><span class="line">        <span class="keyword">if</span> (i != k) {            </span><br><span class="line">            temp = nums[k];            </span><br><span class="line">            nums[k++] = nums[i];            </span><br><span class="line">            nums[i] = temp;        </span><br><span class="line">        }        </span><br><span class="line">        <span class="keyword">else</span>            </span><br><span class="line">            k++;    </span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="keyword">return</span> k;<span class="comment">//k最后指在第一个目标元素</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="③移除元素"><a href="#③移除元素" class="headerlink" title="③移除元素"></a>③移除元素</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//[0...k)都是非目标值val</span></span><br><span class="line"><span class="keyword">int</span> k = <span class="number">0</span>;<span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;    </span><br><span class="line">    <span class="keyword">if</span> (nums[i] != val)&#123; <span class="comment">//遍历数组若该数与目标数相等，则交换        </span></span><br><span class="line">        <span class="keyword">if</span> (i != k) &#123;            </span><br><span class="line">            temp = nums[k];            </span><br><span class="line">            nums[k++] = nums[i];            </span><br><span class="line">            nums[i] = temp;        </span><br><span class="line">        &#125;        </span><br><span class="line">        <span class="keyword">else</span>            </span><br><span class="line">            k++;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> k;<span class="comment">//k最后指在第一个目标元素</span></span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="④删除数组中的重复项"><a href="#④删除数组中的重复项" class="headerlink" title="④删除数组中的重复项"></a>④删除数组中的重复项</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span></span>{    </span><br><span class="line">    <span class="keyword">if</span> (nums.length == <span class="number">0</span>)<span class="comment">//若数组为空直接返回0        </span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;    </span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">1</span>; <span class="comment">//[0...k)为不相同的元素    </span></span><br><span class="line">    <span class="keyword">int</span> temp = <span class="number">0</span>;    </span><br><span class="line">    <span class="keyword">int</span> thenum = nums[<span class="number">0</span>];<span class="comment">//定义临时变量接收不同的元素第一次出现时的值    </span></span><br><span class="line">    <span class="comment">//数组和k指针的初始都从1开始，因为第一个值一定不重复    </span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i < nums.length; i++) {        </span><br><span class="line">        <span class="comment">//遍历数组，若出现不同的值就将直接往后排列赋值        </span></span><br><span class="line">        <span class="keyword">if</span> (nums[i] != thenum){            </span><br><span class="line">        	thenum = nums[i];<span class="comment">//出现新的数时赋值            </span></span><br><span class="line">        	<span class="keyword">if</span> (i != k){            </span><br><span class="line">            	nums[k++] = nums[i];<span class="comment">//这里直接赋值，不交换        </span></span><br><span class="line">        	}<span class="keyword">else</span>              </span><br><span class="line">            	k++;        </span><br><span class="line">    	}    </span><br><span class="line">	}    </span><br><span class="line">	<span class="keyword">return</span> k;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="④删除数组中的重复项"><a href="#④删除数组中的重复项" class="headerlink" title="④删除数组中的重复项"></a>④删除数组中的重复项</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span></span>&#123;    </span><br><span class="line">    <span class="keyword">if</span> (nums.length == <span class="number">0</span>)<span class="comment">//若数组为空直接返回0        </span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;    </span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">1</span>; <span class="comment">//[0...k)为不相同的元素    </span></span><br><span class="line">    <span class="keyword">int</span> temp = <span class="number">0</span>;    </span><br><span class="line">    <span class="keyword">int</span> thenum = nums[<span class="number">0</span>];<span class="comment">//定义临时变量接收不同的元素第一次出现时的值    </span></span><br><span class="line">    <span class="comment">//数组和k指针的初始都从1开始，因为第一个值一定不重复    </span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i++) &#123;        </span><br><span class="line">        <span class="comment">//遍历数组，若出现不同的值就将直接往后排列赋值        </span></span><br><span class="line">        <span class="keyword">if</span> (nums[i] != thenum)&#123;            </span><br><span class="line">        	thenum = nums[i];<span class="comment">//出现新的数时赋值            </span></span><br><span class="line">        	<span class="keyword">if</span> (i != k)&#123;            </span><br><span class="line">            	nums[k++] = nums[i];<span class="comment">//这里直接赋值，不交换        </span></span><br><span class="line">        	&#125;<span class="keyword">else</span>              </span><br><span class="line">            	k++;        </span><br><span class="line">    	&#125;    </span><br><span class="line">	&#125;    </span><br><span class="line">	<span class="keyword">return</span> k;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="⑤删除数组中的重复项Ⅱ"><a href="#⑤删除数组中的重复项Ⅱ" class="headerlink" title="⑤删除数组中的重复项Ⅱ"></a>⑤删除数组中的重复项Ⅱ</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>{</span><br><span class="line">        <span class="keyword">if</span>(nums.length == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">1</span>; <span class="keyword">int</span> thenum = nums[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">int</span> flag = <span class="number">1</span>;<span class="comment">//1表示还可以遇到该数一次，0表示不可以</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i < nums.length;i ++) {</span><br><span class="line">		<span class="keyword">if</span>(nums[i] == thenum && flag == <span class="number">1</span>) {</span><br><span class="line">			nums[k++] = nums[i]; </span><br><span class="line">			flag = <span class="number">0</span>;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">if</span>(nums[i] != thenum) {</span><br><span class="line">			thenum = nums[i];</span><br><span class="line">			<span class="keyword">if</span>(i != k) {</span><br><span class="line">				nums[k++] = nums[i];</span><br><span class="line">			}</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				k++;</span><br><span class="line">			flag = <span class="number">1</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line"><span class="keyword">return</span> k;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="⑤删除数组中的重复项Ⅱ"><a href="#⑤删除数组中的重复项Ⅱ" class="headerlink" title="⑤删除数组中的重复项Ⅱ"></a>⑤删除数组中的重复项Ⅱ</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.length == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">1</span>; <span class="keyword">int</span> thenum = nums[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">int</span> flag = <span class="number">1</span>;<span class="comment">//1表示还可以遇到该数一次，0表示不可以</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt; nums.length;i ++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(nums[i] == thenum &amp;&amp; flag == <span class="number">1</span>) &#123;</span><br><span class="line">			nums[k++] = nums[i]; </span><br><span class="line">			flag = <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(nums[i] != thenum) &#123;</span><br><span class="line">			thenum = nums[i];</span><br><span class="line">			<span class="keyword">if</span>(i != k) &#123;</span><br><span class="line">				nums[k++] = nums[i];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				k++;</span><br><span class="line">			flag = <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">return</span> k;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="⑥颜色分类"><a href="#⑥颜色分类" class="headerlink" title="⑥颜色分类"></a>⑥颜色分类</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sortColors</span><span class="params">(<span class="keyword">int</span> nums[])</span></span>{    </span><br><span class="line"><span class="keyword">int</span> temp = <span class="number">0</span>;    </span><br><span class="line"><span class="keyword">int</span> zero = -<span class="number">1</span>; <span class="comment">//nums[0...zero] == 0    </span></span><br><span class="line"><span class="keyword">int</span> two = nums.length; <span class="comment">//nums[two...n-1] == 2    </span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i < two;) {        </span><br><span class="line">	<span class="keyword">if</span> (nums[i] == <span class="number">1</span>)            </span><br><span class="line">		i++;        </span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (nums[i] == <span class="number">0</span>){            </span><br><span class="line">		zero++;            </span><br><span class="line">		temp = nums[zero];            </span><br><span class="line">		nums[zero] = nums[i];            </span><br><span class="line">		nums[i] = temp;            </span><br><span class="line">		i++;        </span><br><span class="line">	}        </span><br><span class="line">	<span class="keyword">else</span>{<span class="comment">//若该数为2，将前面换过来的数进行原地判断            </span></span><br><span class="line">		two--;            </span><br><span class="line">		temp = nums[two];            </span><br><span class="line">		nums[two] = nums[i];            </span><br><span class="line">		nums[i] = temp;        </span><br><span class="line">	}    </span><br><span class="line">}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="⑥颜色分类"><a href="#⑥颜色分类" class="headerlink" title="⑥颜色分类"></a>⑥颜色分类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sortColors</span><span class="params">(<span class="keyword">int</span> nums[])</span></span>&#123;    </span><br><span class="line"><span class="keyword">int</span> temp = <span class="number">0</span>;    </span><br><span class="line"><span class="keyword">int</span> zero = -<span class="number">1</span>; <span class="comment">//nums[0...zero] == 0    </span></span><br><span class="line"><span class="keyword">int</span> two = nums.length; <span class="comment">//nums[two...n-1] == 2    </span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; two;) &#123;        </span><br><span class="line">	<span class="keyword">if</span> (nums[i] == <span class="number">1</span>)            </span><br><span class="line">		i++;        </span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (nums[i] == <span class="number">0</span>)&#123;            </span><br><span class="line">		zero++;            </span><br><span class="line">		temp = nums[zero];            </span><br><span class="line">		nums[zero] = nums[i];            </span><br><span class="line">		nums[i] = temp;            </span><br><span class="line">		i++;        </span><br><span class="line">	&#125;        </span><br><span class="line">	<span class="keyword">else</span>&#123;<span class="comment">//若该数为2，将前面换过来的数进行原地判断            </span></span><br><span class="line">		two--;            </span><br><span class="line">		temp = nums[two];            </span><br><span class="line">		nums[two] = nums[i];            </span><br><span class="line">		nums[i] = temp;        </span><br><span class="line">	&#125;    </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="⑦合并有序数组"><a href="#⑦合并有序数组" class="headerlink" title="⑦合并有序数组"></a>⑦合并有序数组</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] nums1,<span class="keyword">int</span> m,<span class="keyword">int</span> nums2[],<span class="keyword">int</span> n)</span></span>{</span><br><span class="line">	<span class="keyword">int</span> p1 = m - <span class="number">1</span>;  <span class="comment">//nums1[0...p1]为数组1待排列的数</span></span><br><span class="line">	<span class="keyword">int</span> p2 = n - <span class="number">1</span>;  <span class="comment">//nums2[o...p2]为数组2待排列的数</span></span><br><span class="line">	<span class="keyword">int</span> p = m + n - <span class="number">1</span>; <span class="comment">//p为数组1的尾指针</span></span><br><span class="line">	<span class="keyword">while</span>(p1 >= <span class="number">0</span> && p2 >= <span class="number">0</span>){<span class="comment">//遍历比较两个数组的值，直到一个数组遍历完    </span></span><br><span class="line">    	<span class="keyword">if</span> (nums1[p1] >= nums2[p2]){        </span><br><span class="line">        	nums1[p] = nums1[p1];         </span><br><span class="line">        	p -- ; p1 --;    </span><br><span class="line">    	}<span class="keyword">else</span> {        </span><br><span class="line">        	nums1[p] = nums2[p2];         </span><br><span class="line">        	p -- ; p2 --;    </span><br><span class="line">    	}</span><br><span class="line">	}<span class="keyword">while</span> (p2 >= <span class="number">0</span>)<span class="comment">//数组1优先遍历完，将数组2中的剩余值传入数组1      </span></span><br><span class="line">    	nums1[p--] = nums2[p2--];</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>  	
-					
-	  </div>     
-	  
-
-	<div class="bottom">
-  <div class="other">
-    <div class="meta">
+<h3 id="⑦合并有序数组"><a href="#⑦合并有序数组" class="headerlink" title="⑦合并有序数组"></a>⑦合并有序数组</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] nums1,<span class="keyword">int</span> m,<span class="keyword">int</span> nums2[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> p1 = m - <span class="number">1</span>;  <span class="comment">//nums1[0...p1]为数组1待排列的数</span></span><br><span class="line">	<span class="keyword">int</span> p2 = n - <span class="number">1</span>;  <span class="comment">//nums2[o...p2]为数组2待排列的数</span></span><br><span class="line">	<span class="keyword">int</span> p = m + n - <span class="number">1</span>; <span class="comment">//p为数组1的尾指针</span></span><br><span class="line">	<span class="keyword">while</span>(p1 &gt;= <span class="number">0</span> &amp;&amp; p2 &gt;= <span class="number">0</span>)&#123;<span class="comment">//遍历比较两个数组的值，直到一个数组遍历完    </span></span><br><span class="line">    	<span class="keyword">if</span> (nums1[p1] &gt;= nums2[p2])&#123;        </span><br><span class="line">        	nums1[p] = nums1[p1];         </span><br><span class="line">        	p -- ; p1 --;    </span><br><span class="line">    	&#125;<span class="keyword">else</span> &#123;        </span><br><span class="line">        	nums1[p] = nums2[p2];         </span><br><span class="line">        	p -- ; p2 --;    </span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;<span class="keyword">while</span> (p2 &gt;= <span class="number">0</span>)<span class="comment">//数组1优先遍历完，将数组2中的剩余值传入数组1      </span></span><br><span class="line">    	nums1[p--] = nums2[p2--];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </div>
       
-      <i class="iconfont icon-category"></i>
-      <a class="category-link" href="/categories/算法/">算法</a>
-
-      
-
-      
-      <i class="iconfont icon-tag"></i>
-      <a class="tag-link" href="/tags/数组/">数组</a> <a class="tag-link" href="/tags/算法/">算法</a>
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2019-12-25 00:00:00
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/算法/" title="算法">
+                        <b>#</b> 算法
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/数组/" title="数组">
+                        <b>#</b> 数组
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2019/12/25/数据结构/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
       
     </div>
-
-    <div class="operate">
-      
-      <span class="text">Share</span>
-      <ul class="share">
-	   			             
-        <li class="iconfont 
-		icon-share-qq 
-		-mob-share-qq 
-		item"></li>		
-   	   			             
-        <li class="iconfont 
-		icon-share-weixin 
-		-mob-share-weixin 
-		item"></li>		
-   	   			             
-        <li class="iconfont 
-		icon-share-weibo 
-		-mob-share-weibo 
-		item"></li>		
-   	   
-</ul>	
-
-<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
-      
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-时间复杂度"><span class="toc-text">1.时间复杂度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-数组中的问题"><span class="toc-text">2.数组中的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#①二分查找"><span class="toc-text">①二分查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#②移动0"><span class="toc-text">②移动0</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#③移除元素"><span class="toc-text">③移除元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#④删除数组中的重复项"><span class="toc-text">④删除数组中的重复项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#⑤删除数组中的重复项Ⅱ"><span class="toc-text">⑤删除数组中的重复项Ⅱ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#⑥颜色分类"><span class="toc-text">⑥颜色分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#⑦合并有序数组"><span class="toc-text">⑦合并有序数组</span></a></li></ol></li></ol>
     </div>
   </div>
 
+  <script src="/js/catalog.js"></script>
 
-  
-  <nav class="nav">
-    <div class="link">
-      
-      <a href="/2019/12/25/数据结构/" class="link-wrap">
-        <strong class="caption">older</strong>
-        
-        <span class="title">
-          排序算法总结
-        </span>
-      </a>
-      
-    </div>
-    <div class="link">
-      
-      <a href="/2020/09/07/maven多模块/" class="link-wrap">
-        <strong class="caption">newer</strong>
-        
-        <span class="title">
-          Maven多模块
-        </span>
-      </a>
-      
-    </div>
-  </nav>
-  
-</div> 
-	
-<div class="comment">
+
 
     
-
-    <div id="comment">
-    </div>
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-
-    <script src="//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js"></script>
-
-    <script>
-        new Valine({
-            el: '#comment',
-            notify: false,
-            verify: false,
-            app_id: 'cFM0eCo0CQ9xmBXmHi1eltol-gzGzoHsz',
-            app_key: 'oh9tizsnvV2vNvWgqEvoNtQO',
-            path: window.location.pathname,
-            avatar: 'mm',
-            guest_info: ['nick', 'mail']
-        });
-    </script>
-    
-</div>	
-</article>
-
-          </div> 
-      </div>            
-    
-        <i id="toTop" class="iconfont icon-backtotop"></i>
-
-  
-    <div class="none" id="search">
-    <div class="header">
-        <input type="text" placeholder="Typing Something here." id="search-input" class="input">
+      <div class="comments-container">
         
-        <i id="search-cancel" class="iconfont icon-cancel"></i>
-    </div>
 
-    <div id="search-result" class="result"></div>
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" href="https://github.com/zchengsite/hexo-theme-oranges">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href>
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="facebook" href>
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="twitter" href>
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" href>
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="weibo" href>
+            <i class="iconfont icon-weibo"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      
+        <a href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © Oranges 2021</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
 </div>
-     <div class="mobile-menu">      
 
-      
-      <img class="mobile-menu-icon" src="/images/favicon.png">  
-      
+      </div>
 
-         
-            
-
-            <a class="mobile-menu-link" href="/">Home
-            </a>
-            
-         
-            
-
-            <a class="mobile-menu-link" href="/archives">Archives
-            </a>
-            
-         
-            
-
-            <a class="mobile-menu-link" href="/tags">Tags
-            </a>
-            
-         
-            
-
-            <a class="mobile-menu-link" href="/about">About
-            </a>
-            
-         
-                          
-
-            <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
-            
-         
-      
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
 </div>
+
+<script src="/js/backtotop.js"></script>
+
+
         
-    
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
 
 
 
-     
-    
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  <script src="/js/colorscheme.js"></script>
 
 
-<footer class="footer">
-	<div class="inner">
-		<div class="copyright">
-			&copy;
-			
-			2019 -
-			
-			2021
-			Lemon
 
-			<br>
-			By <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>
-		</div>
-	</div>
-</footer>   
 
-    <script src="/nayo.bundle.js"></script>           
-  </body>        
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E6%88%91%E7%88%B1%E5%AD%A6%E7%AE%97%E6%B3%95 + '&url=' + http%3A%2F%2Fyoursite.com%2F2019%2F12%2F25%2F%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%971%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://yoursite.com/2019/12/25/算法系列1/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  <script src="/js/shares.js"></script>
+
+
+      </div>
+    </div>
+  </body>
 </html>
